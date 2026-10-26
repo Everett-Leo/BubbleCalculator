@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct Bubble_CalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(TournamentData(numPlayers: 0, bracket: []))
         }
     }
 }
